@@ -1,0 +1,16 @@
+
+r = []
+while True:
+    print('(-1) to stop')
+    n = int(input(':'))
+    if n == -1:
+        break
+    r.append(n)
+m = sum(r)/len(r)
+if m > 0 and m < 25.6:
+    print('Joven')
+elif m >= 25.6 and m < 60:
+    print('Adulto')
+
+else:
+    print('Idoso')
